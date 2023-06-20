@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <div style="margin: 25px;">
+      <nav class="navbar navbar-light" style="background-color: black;">
+      <ul class="nav navbar-nav">
+      <li class="active">
+      <a class="navbar-brand" href="Index1.html">Inico</a>
+      </li>
+        <li>
+      <a href="menu.html">Menu</a>
+      </li>
+      <li>
+        <a href="apimovies.html">Peliculas</a>
+      </li>
+      <li>
+        <a href="CalculadoraFisica.html">Calculadora Fisica</a>
+        </li>
+        <li>
+        <a href="Calculadora.html">Calculadora</a>
+        </li>
+        <li>
+        <a href="Footer.html">Contacto</a>
+        </li>
+        <li>
+          <a href="formulario.html">Formulario</a>
+          </li>
+          <li>
+            <a href="pedidorealizado.html">Pedido Realizado</a>
+          </li>
+          <li>
+            <a href="Perfil.html">Perfil</a>
+          </li>
+        <li>
+            <a href="Question.html">Question</a>
+          </li>
+                </ul>
+           </div>
+      </nav>
+    </div> 
     <title>Quiz App</title>
   </head>
   <body>
@@ -15,8 +52,8 @@
 
 
 body {
-  background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+  background-color: #DA70D6;
+  background-image: linear-gradient(315deg, #FF00FF 0%, #DA70D6 100%);
   font-family: 'Poppins', sans-serif;
 
   align-items: center;
@@ -27,7 +64,7 @@ body {
 }
 
 .quiz-container {
-  background-color: #fff;
+  background-color: #EE82EE;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
   width: 600px;
@@ -59,8 +96,8 @@ ul li label {
 }
 
 button {
-  background-color: #8e44ad;
-  color: #fff;
+  background-color: #ADD8E6;
+  color: #EE82EE;
   border: none;
   display: block;
   width: 100%;
@@ -71,33 +108,14 @@ button {
 }
 
 button:hover {
-  background-color: #732d91;
+  background-color: #ADD8E6;
 }
 
 button:focus {
   outline: none;
-  background-color: #5e3370;
+  background-color: #ADD8E6;
 }
     </style>
-    <nav class="navbar navbar-inverse navbar-stick-static-top">
-      <div class="container">
-        <a class="navbar-brand" style="color: rgb(133, 37, 244);" href="index.html">Inicio</a>
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="menu.html">Menu</a>
-          </li>
-          <li>
-            <a href="pedido.html">Pedido</a>
-          </li>
-          <li>
-            <a href="contacto.html">Contacto</a>
-          </li>
-          <li>
-            <a href="apimovies.html">Movies</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
     <div class="container">
       <div class="quiz-container" id="quiz">
@@ -108,13 +126,13 @@ button:focus {
         <h2 id="question">Question text</h2>
         <ul>
           <li>
-            <input type="radio" name="answer" id="a" class="answer">
-            <label for="a" id="a_text">Question</label>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Question</label>
           </li>
 
           <li>
-            <input type="radio" name="answer" id="b" class="answer">
-            <label for="b" id="b_text">Question</label>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Question</label>
           </li>
 
           <li>
@@ -137,7 +155,8 @@ button:focus {
         image:"Img1.jpg",
         a: "Stella",
         b: "Bloom",
-        c: "Aisha"
+        c: "Aisha",
+        d: "Musa",
         correct: "b",
     },
     {
@@ -146,6 +165,7 @@ button:focus {
         a: "Icy",
         b: "Darcy",
         c: "Stormy",
+        d: "Selina",
         correct: "a",
     },
     {
@@ -154,6 +174,7 @@ button:focus {
         a: "En Alfea",
         b: "En Magix",
         c: "En la Tierra",
+        d: "Solaria",
         correct: "c",
     },
     {
@@ -161,8 +182,9 @@ button:focus {
         image:"Img4.jpg",
         a: "Griffin",
         b: "Griselda",
-        c: "Faragonda",
-        correct: "c",
+        c: "Daphne",
+        d: "Faragonda",
+        correct: "d",
     },
 ];  // Un array que contiene los datos del cuestionario
 
