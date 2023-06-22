@@ -55,7 +55,7 @@ img{
 }
 table{
 	border-collapse: collapse;
-	width: 100%;
+	width: 100px;
 	margin-bottom: 20px;
 }
 th, td{
@@ -73,7 +73,7 @@ img{
 	width: 100px;
 	height: 100px;
 }
-video{
+.video{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -81,21 +81,11 @@ video{
 	height: 100%;
 	object-fit: cover;
 }
-.titulo{
-	font-family: 'D3 Craftism', sans-serif;
-	font-size: 130px;
-	background:rgb(0, 0, 0);
+.title{
+	font-family: 'Strongam Caps',sans-serif;
+	font-size: 50px;
+	background color: blue;
 	text-align: center;
 	font-weight: 200;
-	mix-blend-mode: multiply;
-}
-.p1{
-	background-color: violet;
-	text-align: center;
-	width: 5px;
-}
-.p2{
-	background-color: violet;
-	text-align: center;
-	width: 5px;
+	mix-blend-mode:
 }
